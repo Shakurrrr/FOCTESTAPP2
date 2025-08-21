@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Circle shape overlay -->
+    <style name="Calc.ShapeCircle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Base circular key: will expand to row height & share width via weight -->
+    <style name="Calc.Circle" parent="Widget.Material3.Button.TonalButton">
+        <!-- Size controlled by the row (0dp + weight in layout), not here -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">8dp</item>
+
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="backgroundTint">#2E2E2E</item>
+        <item name="shapeAppearanceOverlay">@style/Calc.ShapeCircle</item>
+
+        <!-- Remove default insets so label is centered visually -->
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="iconPadding">0dp</item>
+    </style>
+
+    <style name="Calc.Circle.Op" parent="Calc.Circle">
+        <item name="backgroundTint">#4A4A4A</item>
+    </style>
+
+    <style name="Calc.Circle.Eq" parent="Calc.Circle">
+        <item name="backgroundTint">#00C853</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="Calc.Circle.Clear" parent="Calc.Circle">
+        <item name="backgroundTint">#616161</item>
+    </style>
+
+    <!-- Safety alias: any stray @style/Calc resolves to the base circle -->
+    <style name="Calc" parent="Calc.Circle" />
+</resources>
