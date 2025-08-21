@@ -111,7 +111,7 @@ Now your app will show the custom logo. ✅
 
 | Calculator                                     | Profile                                  | Products                                   |
 | ---------------------------------------------- | ---------------------------------------- | ------------------------------------------ |
-| ![Calculator](docs/screenshots/calculator.png) | ![Profile](docs/screenshots/profile.png) | ![Products](docs/screenshots/products.png) |
+| ![Calculator](docs) | ![Profile](app/WhatsApp Image 2025-08-21 at 09.20.31_d2301d02.jpg) | ![Products](app/WhatsApp Image 2025-08-21 at 09.20.31_d2301d02.jpg) |
 
 
 
